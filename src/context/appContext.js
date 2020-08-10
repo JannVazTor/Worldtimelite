@@ -52,6 +52,7 @@ const useAppContext = () => {
 };
 
 export {
+    AppContext,
     useAppContext,
     AppContextComponent
 }

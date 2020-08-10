@@ -44,7 +44,12 @@ export function SearchInput() {
     const handleResultSelect = (e, { result }) => {
         if (timezonesSelected.length < TABLE_TIMEZONES_MAX_ROWS) {
             setQuery(result.title);
-            setTimezonesSelected([...timezonesSelected, result]);
+            const timeZoneSelected = timezonesSelected
+                .find(tz => tz.city === result.city);
+                
+            if (!timeZoneSelected) {
+                setTimezonesSelected([...timezonesSelected, result]);
+            }
         }
     };
 
@@ -53,7 +58,7 @@ export function SearchInput() {
             <Grid.Row>
                 <Grid.Column computer={5} tablet={8} mobile={16}>
                     <Search
-                        icon='false'
+                        icon={false}
                         value={query}
                         results={results}
                         className='search-input-wrapper'
