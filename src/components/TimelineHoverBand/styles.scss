@@ -1,0 +1,12 @@
+@import '../../styles/base/palette.scss';
+
+.time-line-band-wrapper {
+    position: absolute;
+    top: 13px;
+    border-radius: 9px;
+    min-height: 58px;
+    min-width: 29px;
+    border: 2px solid $hitPink;
+    z-index: 9999;
+    background-color: rgba($color: $hitPink, $alpha: 0.4);
+}

@@ -1,0 +1,42 @@
+@import '../../styles/base/palette.scss';
+
+.timeline-wrapper {
+    display: flex;
+    padding: 0 0 0 0.5rem;
+
+    .timeline-item {
+        display: inline;
+
+        &-container {
+            padding: 9px 7px;
+            display: grid;
+            font-weight: bold;
+
+            &.sun-rise-down {
+                background-color: $pattensBlue;
+            }
+    
+            &.day {
+                background-color: $porcelain;
+            }
+    
+            &.night {
+                color: $white;
+                background-color: $limedSpruce;
+            }
+
+            &.midnight {
+                border-radius: 8px 0 0 8px;
+                margin-left: 2px;
+                small {
+                    font-size: 60%;
+                }
+            }
+
+            &.almost-midnight {
+                border-radius: 0 8px 8px 0;
+                margin-right: 2px;
+            }
+        }
+    }
+}

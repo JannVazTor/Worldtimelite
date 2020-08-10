@@ -1,0 +1,82 @@
+@import '../../styles/base/palette.scss';
+@import '../../styles/base/breakpoints.scss';
+
+.timezone-table-wrapper {
+    position: relative;
+
+    .row {
+        padding-bottom: 0 !important;
+
+        .column {
+            padding: 0 !important;
+
+            .date-hours-diff-button {
+                width: 4rem;
+                height: 4rem;
+                padding: 0;
+
+                span {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .home-button {
+                padding: 1.5rem;
+            }
+
+            .place-formatted {
+                margin-left: 1.5rem;
+            }
+
+            &.timeline-row {
+                position: relative;
+
+                .timeline-next-item-arrow {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 40%;
+                    right: -4.5rem;
+
+                    @include for_breakpoint (lg) {
+                        right: -3.5rem;
+                    }
+
+                    @include for_breakpoint(md) {
+                        right: -3rem;
+                    }
+
+                    @include for_breakpoint((xs, sm)) {
+                        right: 0rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .timeline-date-range {
+        display: flex;
+
+        p {
+            margin-bottom: 0;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        p:first-child {
+            text-align: right;
+            margin-right: 2px;
+        }
+
+        p:last-child {
+            text-align: left;
+            margin-left: 2px;
+        }
+    }
+
+    .timeline-single-date {
+        margin-right: 1rem;
+    }
+}
