@@ -1,0 +1,1 @@
+export const TABLE_TIMEZONES_MAX_ROWS = 4;
