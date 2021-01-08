@@ -1,6 +1,6 @@
 ### Worldtime Lite
 
-A small widget to compare Timezones. Live demo [https://worldtime-lite.herokuapp.com/](https://worldtime-lite.herokuapp.com/) 
+A small widget that I made as a challenge, used to compare Timezones. Live demo [https://worldtime-lite.herokuapp.com/](https://worldtime-lite.herokuapp.com/) 
 
 ![Alt Text](https://raw.github.com/JannVazTor/Worldtimelite/master/assets/worldtimelite.png "World Time Lite")
 
