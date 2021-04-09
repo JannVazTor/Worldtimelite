@@ -6,6 +6,10 @@ A small widget that I made as a challenge, used to compare Timezones. Live demo 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Restrictions
+
+Must be finished in 1 day
+
 ### Available Scripts
 
 In the project directory, you can run:
